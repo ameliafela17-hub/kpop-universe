@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Pop Universe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">K-Pop <span>Universe</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#groups">Groups</a>
+            <a href="#members">Members</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="subtitle">WELCOME TO</p>
+            <h1>K-POP UNIVERSE</h1>
+            <p>
+                Discover your favorite K-Pop groups and get to know
+                their members through their personal profile cards.
+            </p>
+            <a href="#groups" class="main-button">Explore Groups</a>
+        </div>
+    </section>
+
+    <!-- GROUPS -->
+    <section id="groups" class="section">
+        <p class="subtitle">DISCOVER YOUR FAVORITE</p>
+        <h2>K-Pop Groups</h2>
+        <p class="section-desc">
+            Choose your favorite group to see its members.
+        </p>
+
+        <div class="group-container">
+
+            <div class="group-card" onclick="showGroup('ENHYPEN')">
+                <img src="enhypen.jpg.jpeg"
+                     alt="ENHYPEN Logo"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-fallback">E</div>
+                <h3>ENHYPEN</h3>
+                <p>7 Members</p>
+            </div>
+
+            <div class="group-card" onclick="showGroup('CORTIS')">
+                <img src="cortis.jpg.jpeg"
+                     alt="CORTIS Logo"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-fallback">C</div>
+                <h3>CORTIS</h3>
+                <p>5 Members</p>
+            </div>
+
+            <div class="group-card" onclick="showGroup('LNGSHOT')">
+                <img src="lngshot.jpg.jpeg"
+                     alt="LNGSHOT Logo"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-fallback">L</div>
+                <h3>LNGSHOT</h3>
+                <p>4 Members</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MEMBER LIST -->
+    <section id="members" class="section member-section">
+        <p class="subtitle">GET TO KNOW THEM</p>
+        <h2 id="member-title">Our Members</h2>
+        <p class="section-desc" id="member-desc">
+            Select a group logo to see its members.
+        </p>
+
+        <div id="member-container" class="member-container">
+            <p class="empty-message">
+                Your favorite members will appear here.
+            </p>
+        </div>
+    </section>
+
+    <!-- BIODATA / ID CARD -->
+    <section id="biodata" class="section biodata-section">
+        <p class="subtitle">MEMBER PROFILE</p>
+        <h2>Identity Card</h2>
+
+        <div id="biodata-container">
+            <p class="empty-message">
+                Select a member to see their identity card.
+            </p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+        <p class="subtitle">ABOUT THIS WEBSITE</p>
+        <h2>Welcome to K-Pop Universe</h2>
+        <p>
+            K-Pop Universe is a website created to introduce
+            K-Pop groups and their members. Through this website,
+            visitors can explore group profiles and discover
+            member information in a simple and elegant design.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 K-Pop Universe | Made with love</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
